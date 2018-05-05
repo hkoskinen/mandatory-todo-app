@@ -1,7 +1,11 @@
 import React from 'react';
 
-const TodoItem = ({text}) => (
-  <div className="todo-item">{text}</div>
-);
+const TodoItem = ({id, text, handleRemoveItem}) => {
+  return (
+    <div className="todo-item">
+      <button onClick={()=>handleRemoveItem(id)}>X</button> {text}
+    </div>
+  );
+};
 
 export default TodoItem;
