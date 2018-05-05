@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {v4 as uuidv4} from 'uuid';
 import './App.css';
 
 const TodoItem = ({text}) => (
@@ -8,7 +9,7 @@ const TodoItem = ({text}) => (
 const TodoItems = ({items}) => (
   <div className="todo-items">
     {items.length ? (
-      items.length && items.map(item => <TodoItem text={item.text} />)
+      items.length && items.map(item => <TodoItem key={item.id} text={item.text} />)
     ) : (
       <div>You don't have any todo items.</div>
     )}
@@ -18,9 +19,9 @@ const TodoItems = ({items}) => (
 class App extends Component {
   state = {
     todoItems: [
-      { text: 'Remember the milk' },
-      { text: 'Find the meaning of life' },
-      { text: 'Binge watch Mr. Robot' }
+      { text: 'Remember the milk', id: uuidv4() },
+      { text: 'Find the meaning of life', id: uuidv4() },
+      { text: 'Binge watch Mr. Robot', id: uuidv4() }
     ]
   }
 
