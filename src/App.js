@@ -2,19 +2,7 @@ import React, { Component } from 'react';
 import {v4 as uuidv4} from 'uuid';
 import './App.css';
 
-const TodoItem = ({text}) => (
-  <div className="todo-item">{text}</div>
-);
-
-const TodoItems = ({items}) => (
-  <div className="todo-items">
-    {items.length ? (
-      items.length && items.map(item => <TodoItem key={item.id} text={item.text} />)
-    ) : (
-      <div>You don't have any todo items.</div>
-    )}
-  </div>
-);
+import TodoItems from './components/TodoItems';
 
 class App extends Component {
   state = {
