@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>TODO APP</h1>
+        <h1 className="App__title">most generic todo app</h1>
         <TodoItems
           handleRemoveItem={this.handleRemoveItem}
           items={this.state.todoItems} />
