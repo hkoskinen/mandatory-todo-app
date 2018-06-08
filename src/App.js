@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import './App.css';
 
 import TodoItems from './components/TodoItems';
+import AddTodoItem from './components/AddTodoItem';
 
 class App extends Component {
   state = {
@@ -21,6 +22,10 @@ class App extends Component {
     this.setState({todoItems: remainingItems});
   }
 
+  onAddItem = (item) => {
+    this.setState({todoItems: [...this.state.todoItems, {text: item, id: uuidv4()}]});
+  }
+
   render() {
     return (
       <div className="App">
@@ -28,6 +33,9 @@ class App extends Component {
         <TodoItems
           handleRemoveItem={this.handleRemoveItem}
           items={this.state.todoItems} />
+
+        <AddTodoItem onAddItem={this.onAddItem} />
+
       </div>
     );
   }
