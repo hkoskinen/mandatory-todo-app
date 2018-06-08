@@ -10,8 +10,25 @@ html {
 
 body {
   margin: 0;
-  line-height: 1.5;
   font-family: sans-serif;
-  color: #454545;
+  color: #333;
+  background-color: #fff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 900;
+  color: #999;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #999;
+}
