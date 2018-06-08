@@ -1,38 +1,36 @@
 import React from 'react';
+import './AddTodoItem.css';
 
 class AddTodoItem extends React.Component {
 
   state = {
-    val: ''
+    value: ''
   }
 
-  onSubmit = (e) => {
-    e.preventDefault();
-    this.props.onAddItem(this.state.val);
-    this.setState({val: ''});
+  onSubmit = event => {
+    event.preventDefault();
+    this.props.onAddItem(this.state.value);
+    this.setState({value: ''});
   }
 
-  onChange = (e) => {
-    this.setState({val: e.target.value});
+  onChange = event => {
+    this.setState({value: event.target.value});
   }
 
   render() {
-
     return (
-      <div>
+      <div className="AddTodoItem">
         <form onSubmit={this.onSubmit}>
-          <div>
+          <div className="AddTodoItem__wrapper">
             <input type="text"
-              value={this.state.val}
+              value={this.state.value}
               onChange={this.onChange}
               placeholder="Remember the milk..." />
-            <button type="submit" >Add</button>
+            <button type="submit" className="btn">Add</button>
           </div>
         </form>
       </div>
-
     );
-
   }
 }
 
