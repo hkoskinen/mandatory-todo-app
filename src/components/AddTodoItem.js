@@ -26,7 +26,7 @@ class AddTodoItem extends React.Component {
               value={this.state.value}
               onChange={this.onChange}
               placeholder="Remember the milk..." />
-            <button type="submit" className="btn">Add</button>
+            <button type="submit" className="button">Add</button>
           </div>
         </form>
       </div>

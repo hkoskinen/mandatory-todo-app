@@ -2,4 +2,6 @@
   display: flex;
   border-bottom: 1px solid lightgrey;
   justify-content: space-between;
+  margin-bottom: 2em;
+  align-items: center;
 }

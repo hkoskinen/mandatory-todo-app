@@ -10,9 +10,9 @@
 .AddTodoItem input {
   flex-grow: 2;
 }
-
+/*
 .AddTodoItem button {
   border: 1px solid purple;
   padding: 1em;
   text-transform: uppercase;
-}
+}*/
