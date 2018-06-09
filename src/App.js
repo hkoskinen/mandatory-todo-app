@@ -30,12 +30,12 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="App__title">most generic todo app</h1>
-        <TodoItems
-          handleRemoveItem={this.handleRemoveItem}
-          items={this.state.todoItems} />
 
         <AddTodoItem onAddItem={this.onAddItem} />
 
+        <TodoItems
+          handleRemoveItem={this.handleRemoveItem}
+          items={this.state.todoItems} />
       </div>
     );
   }
