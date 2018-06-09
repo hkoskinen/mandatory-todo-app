@@ -11,8 +11,8 @@ html {
 body {
   margin: 0;
   font-family: sans-serif;
-  color: #333;
-  background-color: #fff;
+  color: #3d4252;
+  background-color: #cacbd5;
 }
 
 h1,
@@ -23,13 +23,13 @@ h5,
 h6 {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 900;
-  color: #999;
+  color: #666f89;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: #999;
+  color: #666f89;
   margin: 0;
   line-height: 1.5;
 }
@@ -42,17 +42,18 @@ input, button, label {
 
 .button {
   text-transform: uppercase;
-  background: #333;
+  background: #3d4252;
   border: 0;
   padding: 1em;
   outline: 0;
   color: #fff;
-  border: 1px solid #333;
+  border: 1px solid #3d4252;
+  transition: all 250ms ease-out;
 }
 
 .button:hover {
-  transition: all .2s ease-out;
   background: #fff;
-  color: #333;
+  color: #3d4252;
   cursor: pointer;
+  border: 1px solid #d55e2d;
 }

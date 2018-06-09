@@ -1,7 +1,13 @@
 .todo-item {
   display: flex;
-  border-bottom: 1px solid lightgrey;
   justify-content: space-between;
   margin-bottom: 2em;
   align-items: center;
+  background: rgba(255,255,255,.1);
+
+  box-shadow: 0 3px 0 rgba(102,111,137, 0.5);
+}
+
+.todo-item p {
+  padding-left: 0.5em;
 }

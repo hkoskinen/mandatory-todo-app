@@ -1,5 +1,5 @@
 .AddTodoItem {
-  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .AddTodoItem__wrapper {
@@ -9,10 +9,12 @@
 
 .AddTodoItem input {
   flex-grow: 2;
+  border: 0;
+  padding-left: 0.5em;
+  outline: 0;
+  border: 1px solid #fff;
 }
-/*
-.AddTodoItem button {
-  border: 1px solid purple;
-  padding: 1em;
-  text-transform: uppercase;
-}*/
+
+.AddTodoItem input:focus {
+  border: 1px solid #d55e2d;
+}
