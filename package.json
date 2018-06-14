@@ -2,7 +2,7 @@
   "name": "mandatory-todo-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hkoskinen.github.io/mandatory-todo-app",
+  "homepage": "https://hkoskinen.github.io/mandatory-todo-app/mandatory-todo-app",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.3.2",
